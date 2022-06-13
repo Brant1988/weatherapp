@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(32, 30, 30);
+    color:white;
+    width: 100%;
+    height: 100vh;
+    margin:0;
+}
+
+.container {
+    margin: auto;
+    margin-top: 4%;
+    width: 80%;
+    height: 80%;
+    background-image: url(./image/rainday.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    transition: 500ms;
+    opacity: 1;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 12px 13px 5px 1px rgba(0, 0, 0, 0.2);
+    user-select: none;
+}
+
+/* .container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+} */
+
+.containernow {
+    width: 65%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    
+}
+
+.temperaturenow{
+    margin-left: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cityanddate,
+.degreesnow,
+.optionsnow {
+ margin: 0 1em;
+}
+
+.cityanddate h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.degreesnow {
+    font-size: 7em;
+    margin: 0;
+}
+
+.time,
+.date {
+    font-size: 1.1em;
+}
+
+.imagenow {
+    display: block;
+    margin: 0.28em 0;
+}
+
+.bylocation {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5em;
+    color: white;
+    margin-left: 5%;
+    margin-top: 5%;
+    background: none;
+    border: none;
+    z-index: 1;
+}
+
+.bylocation :hover {
+    cursor: pointer;
+    border-bottom: 1px #ccc solid;
+    border-bottom-width: 100% ;
+}
+.containeroptions {
+    padding: 0 2em;
+    width: 35%;
+    height: 100%;
+    background: rgba(22, 21, 21, 0.651);
+    backdrop-filter: blur(5px);
+    display: flex;
+    flex-direction: column;
+}
+
+.form {
+    font-family: 'Poppins', sans-serif;
+    margin: 2% auto;
+    background: none;
+    border: none;
+    border-bottom: 1px #ccc solid;
+    width: 100%;
+    color: #fff;
+    font-size: 1.1em;
+    z-index: 1;
+}
+
+#search {
+    background: none;
+    border: none;
+    color: white;
+}
+
+#search:focus {
+    outline: none;
+}
+
+
+.form::placeholder {
+    color:#ccc;
+}
+
+.todaystext {
+    margin: 0 0;
+}
+
+.containertoday {
+    height: 40%;
+}
+
+.containertoday ul {
+    margin: 0 0;
+    list-style: none;
+    border-bottom: 1px #ccc solid;
+    border-bottom-width: 100% ;
+    padding: 0.5em 0;
+}
+
+.containertoday li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.7em;
+    font-style: normal;
+    margin-bottom: 2%;
+}
+
+
+.containertomorrow {
+    height: 40%;
+    
+}
+
+.containertommorow ul {
+    margin: 0 0;
+    list-style: none;
+    border-bottom: 1px #ccc solid;
+    border-bottom-width: 100% ;
+    padding: 0.5em 0;
+}
+
+.containertommorow li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.7em;
+    font-style: normal;
+    margin-bottom: 2%;
+}
+
+.tomorrowtext {
+    margin: 2% 0;
+}

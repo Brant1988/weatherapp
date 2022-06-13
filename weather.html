@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,  initial-scale=1.0">
+    <link rel="stylesheet" href="weatherstyles.css">
+    <title>Weather app</title>
+</head>
+<body>
+<div class="container">
+    <div class="containernow">
+        <button class="bylocation" id="button" enable>In your location</button>
+        <div class="temperaturenow">
+            <h1 class="degreesnow"></h1>
+            <div class="cityanddate">
+                <h1 class="city"></h1>
+                <small>
+                    <span class="time"></span>
+                    <span class="date"></span>
+                </small>       
+            </div>
+            <div class="optionsnow">
+                <img class="imagenow" src="" alt="">
+            <span class="conditionnow"></span>
+            </div>
+        </div>
+    </div> 
+        <div class="containeroptions">    
+            <form autocomplete="off" class="form"><input type="text" id="search" placeholder="Search by City name"/>
+            </form>
+            <div class="containertoday">
+                <h1 class="todaystext">Today</h1>
+                <ul class="wetherdetails">
+                    <li>
+                        <span>Cloudy</span>
+                        <span class="clouds"></span>
+                    </li>
+                    <li>    
+                         <span>Humidity</span>
+                         <span class="humidity"></span>
+                    </li>
+                    <li>
+                          <span>Wind</span>
+                           <span class="wind"></span>
+                    </li>
+                    <li>   
+                          <span>Pressure</span>
+                          <span class="pressure"></span>
+                    </li>    
+                </ul>
+            </div>
+            <div class="containertommorow">
+                <h1 class="tomorrowtext">Tomorrow</h1>
+                <ul class="wetherdetails">
+                <li>
+                    <span>Temperature</span>
+                    <span class="temperaturetomorrow"></span>
+                </li>
+                <li>
+                    <span>Cloudy</span>
+                    <span class="cloudstom"></span>
+                </li>
+                <li>    
+                    <span>Humidity</span>
+                    <span class="humiditytom"></span>
+                </li>
+                <li>
+                    <span>Wind</span>
+                    <span class="windtom"></span>
+                </li>
+                <li>   
+                    <span>Pressure</span>
+                    <span class="pressuretom"></span>
+                </li>    
+                </ul>
+            </div>
+        </div>
+ </div>
+<script src="weatherscript.js"></script>
+</body>
+</html>
