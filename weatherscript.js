@@ -61,7 +61,10 @@ const getAndRenderWeatherByCoord = () => {
     const APIkey = "c01813a711179709aebbfc8d36ead466";
     const api = `http://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&exclude=hourly,hourly&appid=${APIkey}`;
 
-    const weatherByCoords = await fetch(api).then((res) => res.json());
+    const weatherByCoords = await fetch(api)
+      .then((res) => res.json())
+      .catch((e) => console.log(e));
+
     console.log(weatherByCoords);
 
     const renderWeatherByCoords = (data) => {
@@ -94,9 +97,9 @@ const getAndRenderWeatherByCity = async (cityName) => {
   const APIkey = "c01813a711179709aebbfc8d36ead466";
   const api = `http://api.openweathermap.org/data/2.5/forecast?q=${cityName}&exclude=hourly,hourly&appid=${APIkey}`;
 
-  const weatherByCity = await fetch(api).then((res) => res.json());
-
-  console.log(weatherByCity);
+  const weatherByCity = await fetch(api)
+    .then((res) => res.json())
+    .catch((e) => console.log(e));
 
   const renderWeatherByCity = (data) => {
     const temperture = kelvinToCelcius(data.list[0].main.temp);
